@@ -73,5 +73,5 @@ These are part of the shipped game but live in files interleaved with narrative 
 | Script labels | 427 |
 | UI screens | 104 |
 | Art assets | 1,200+ WebP |
-| Languages | English, French, Japanese, Chinese |
+| Languages | English, French, Japanese, Simplified Chinese |
 | Platforms | Windows, macOS, Linux, Android, Web |
