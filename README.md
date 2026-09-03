@@ -60,6 +60,14 @@ for CJK — and adjusts line spacing per script.
 
 These are part of the shipped game but live in files interleaved with narrative content:
 
+- **Constraint-based sprite composition** — the character is declared as 102 attributes across
+  12 groups (outfit, hair, arm, expression, …) wired together by 289 conditional rules stating
+  which parts are valid together, plus front/back layering variants. The renderer resolves a
+  legal composite from a tag set, so outfits × hair × poses × expressions never has to be drawn
+  exhaustively.
+- **Event-gating state machine** — reactive dialogue tracked in sets keyed by reset lifetime
+  (per day, per act, per date, per encounter) and gated on story progression, so repeating an
+  action yields new dialogue as the game advances rather than repeating itself.
 - **Steamworks achievements** with notification and sync
 - **Roguelike mode** — a separate run-based mode with its own card shop and coin economy
 - **Build packaging** — one tree producing demo, censored and full SKUs via build classifiers,
